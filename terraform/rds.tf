@@ -58,7 +58,7 @@ variable "db_password" {
   description = "Contrasena del usuario maestro. Minimo 8 caracteres; RDS rechaza '/', '@', '\"' y el espacio."
   type        = string
   sensitive   = true
-  default     = "Duoc2026Postgres"
+  default     = "postgres"
 
   validation {
     condition = (
