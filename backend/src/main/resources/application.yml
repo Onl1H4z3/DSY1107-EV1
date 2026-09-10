@@ -43,9 +43,9 @@ spring:
   # existe en la maquina de nadie.
   # ---------------------------------------------------------------------------
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://pg.c3s3gdwopya8.us-east-1.rds.amazonaws.com:5432/postgres?sslmode=verify-full&sslrootcert=./global-bundle.pem}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://dsy1107-db-rivera.c3s3gdwopya8.us-east-1.rds.amazonaws.com:5432/dsy1107?sslmode=verify-full&sslrootcert=./global-bundle.pem}
     username: ${SPRING_DATASOURCE_USERNAME:postgres}
-    password: ${SPRING_DATASOURCE_PASSWORD:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:Duoc2026Postgres}
 
   jpa:
     hibernate:
