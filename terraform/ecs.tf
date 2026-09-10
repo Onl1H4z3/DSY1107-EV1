@@ -75,11 +75,11 @@ data "aws_route_table" "principal" {
   }
 }
 
-resource "aws_route" "salida_a_internet" {
-  route_table_id         = data.aws_route_table.principal.id
-  destination_cidr_block = "0.0.0.0/0"
-  gateway_id             = data.aws_internet_gateway.default.id
-}
+#resource "aws_route" "salida_a_internet" {
+ # route_table_id         = data.aws_route_table.principal.id
+  #destination_cidr_block = "0.0.0.0/0"
+  #gateway_id             = data.aws_internet_gateway.default.id
+#}
 
 # El ID de la cuenta se pregunta en vez de quemarse: asi el archivo sirve en el
 # lab de cualquiera. Se declara aqui y no en otro archivo para que ecs.tf se
